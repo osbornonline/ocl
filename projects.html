@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Osborn Contractors - Our Work</title>
+  <meta name="description" content="View selected industrial, commercial and infrastructure projects delivered by Osborn Contractors across the UK.">
+  <link rel="icon" type="image/png" href="./assets/icons/favicon.png">
+  <link rel="apple-touch-icon" href="./assets/icons/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/variables.css">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/navbar.css">
+  <link rel="stylesheet" href="./css/global.css">
+  <link rel="stylesheet" href="./css/pages/projects.css">
+  <link rel="stylesheet" href="./css/footer.css">
+</head>
+<body>
+
+  <nav class="osb-nav" id="osbNav">
+    <div class="osb-nav__container">
+      <a href="/" class="osb-nav__logo" aria-label="Osborn Contractors - Home"><img src="./assets/images/global/logo.png" alt="Osborn Contractors" width="180" height="52"></a>
+      <ul class="osb-nav__links">
+        <li><a href="/" class="osb-nav__link">Home</a></li>
+        <li><a href="/about" class="osb-nav__link">About</a></li>
+        <li class="osb-nav__dropdown-parent">
+          <a href="javascript:void(0)" class="osb-nav__link">Services <svg class="osb-nav__chevron" viewBox="0 0 10 10" aria-hidden="true"><polyline points="1,3.5 5,7 9,3.5"/></svg></a>
+          <ul class="osb-nav__dropdown">
+            <li><a href="/services/industrial-refurbishment" class="osb-nav__dropdown-link">Industrial Refurbishment</a></li>
+            <li><a href="/services/commercial-construction" class="osb-nav__dropdown-link">Commercial Construction</a></li>
+            <li><a href="/services/infrastructure-and-civils" class="osb-nav__dropdown-link">Infrastructure & Civils</a></li>
+            <li><a href="/services/repurposing-and-fit-out" class="osb-nav__dropdown-link">Repurposing & Fit-Out</a></li>
+            <li><a href="/services/project-coordination" class="osb-nav__dropdown-link">Project Coordination</a></li>
+          </ul>
+        </li>
+        <li><a href="/projects" class="osb-nav__link">Projects</a></li>
+        <li><a href="/contact" class="osb-nav__link">Contact</a></li>
+      </ul>
+      <a href="/contact" class="osb-nav__cta">Discuss A Project <svg class="osb-nav__cta-arrow" viewBox="0 0 14 14" aria-hidden="true"><line x1="1" y1="7" x2="11" y2="7"/><polyline points="7,3 11,7 7,11"/></svg></a>
+      <button class="osb-nav__toggle" id="osbNavToggle" aria-label="Toggle navigation menu" aria-expanded="false"><span class="osb-nav__toggle-bar"></span><span class="osb-nav__toggle-bar"></span><span class="osb-nav__toggle-bar"></span></button>
+    </div>
+  </nav>
+  <div class="osb-nav__mobile" id="osbMobileMenu">
+    <ul class="osb-nav__mobile-list">
+      <li><a href="/" class="osb-nav__mobile-link">Home</a></li>
+      <li><a href="/about" class="osb-nav__mobile-link">About</a></li>
+      <li>
+        <a href="javascript:void(0)" class="osb-nav__mobile-link" id="osbMobileServicesToggle">Services <svg class="osb-nav__mobile-chevron" id="osbMobileServicesChevron" viewBox="0 0 14 14" aria-hidden="true"><polyline points="2,5 7,10 12,5"/></svg></a>
+        <ul class="osb-nav__mobile-sub" id="osbMobileServicesSub">
+          <li><a href="/services/industrial-refurbishment" class="osb-nav__mobile-sub-link">Industrial Refurbishment</a></li>
+          <li><a href="/services/commercial-construction" class="osb-nav__mobile-sub-link">Commercial Construction</a></li>
+          <li><a href="/services/infrastructure-and-civils" class="osb-nav__mobile-sub-link">Infrastructure & Civils</a></li>
+          <li><a href="/services/repurposing-and-fit-out" class="osb-nav__mobile-sub-link">Repurposing & Fit-Out</a></li>
+          <li><a href="/services/project-coordination" class="osb-nav__mobile-sub-link">Project Coordination</a></li>
+        </ul>
+      </li>
+      <li><a href="/projects" class="osb-nav__mobile-link">Projects</a></li>
+      <li><a href="/contact" class="osb-nav__mobile-link">Contact</a></li>
+    </ul>
+    <a href="/contact" class="osb-nav__mobile-cta">Discuss A Project</a>
+  </div>
+  <div class="osb-nav-spacer"></div>
+
+  <main>
+
+    <section class="osb-pj-hero">
+      <div class="osb-pj-hero__grid"></div>
+      <div class="osb-pj-hero__container">
+        <h1 class="osb-pj-hero__title">Projects</h1>
+        <p class="osb-pj-hero__breadcrumb"><a href="/">Home</a> <span>/</span> Projects</p>
+      </div>
+      <div class="osb-pj-hero__accent"></div>
+    </section>
+
+    <section class="osb-pj-intro">
+      <div class="osb-pj-intro__container">
+        <div class="osb-pj-intro__text">
+          <div class="osb-pj__label"><span class="osb-pj__label-line"></span><span class="osb-pj__label-text">Our Work</span></div>
+          <h2 class="osb-pj__heading">Selected Projects</h2>
+          <p class="osb-pj__body">A selection of industrial, commercial and infrastructure projects delivered with precision and reliability.</p>
+        </div>
+        <div class="osb-pj-filters" id="osbPjFilters">
+          <button class="osb-pj-filter osb-pj-filter--active" data-filter="all">All</button>
+          <button class="osb-pj-filter" data-filter="industrial">Industrial</button>
+          <button class="osb-pj-filter" data-filter="commercial">Commercial</button>
+          <button class="osb-pj-filter" data-filter="infrastructure">Infrastructure</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="osb-pj-grid-section">
+      <div class="osb-pj-grid__container">
+        <div class="osb-pj-notice">
+          <div class="osb-pj-notice__inner">
+            <svg class="osb-pj-notice__icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+            <p class="osb-pj-notice__text"><strong>Placeholder projects.</strong> These are representative examples used during development. Actual project details, images and case studies will replace these once available.</p>
+          </div>
+        </div>
+        <div class="osb-pj-grid" id="osbPjGrid">
+          <div class="osb-pj-card osb-pj-card--featured osb-reveal" data-category="industrial" data-delay="0">
+            <img class="osb-pj-card__image" src="https://images.unsplash.com/photo-1587293852726-70cdb56c2866?auto=format&fit=crop&w=1400&q=80" alt="Warehouse refurbishment project">
+            <div class="osb-pj-card__overlay"></div>
+            <div class="osb-pj-card__tag">Industrial</div>
+            <div class="osb-pj-card__content"><h3 class="osb-pj-card__title">Distribution Centre Refurbishment</h3><div class="osb-pj-card__location">Reading, Berkshire</div><p class="osb-pj-card__desc">Full refurbishment of a 40,000 sq ft distribution warehouse, including structural upgrades, new MEP installation and fire protection systems.</p><a href="#" class="osb-pj-card__link">View Project <svg class="osb-pj-card__link-arrow" viewBox="0 0 12 12" aria-hidden="true"><line x1="0" y1="6" x2="9" y2="6"/><polyline points="5,2 9,6 5,10"/></svg></a></div>
+          </div>
+          <div class="osb-pj-card osb-reveal" data-category="commercial" data-delay="100">
+            <img class="osb-pj-card__image" src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80" alt="Commercial office building">
+            <div class="osb-pj-card__overlay"></div>
+            <div class="osb-pj-card__tag">Commercial</div>
+            <div class="osb-pj-card__content"><h3 class="osb-pj-card__title">City Centre Office Fit-Out</h3><div class="osb-pj-card__location">Bristol</div><p class="osb-pj-card__desc">Cat A and Cat B fit-out of a six-storey commercial office building, including reception, meeting suites and open-plan workspace.</p><a href="#" class="osb-pj-card__link">View Project <svg class="osb-pj-card__link-arrow" viewBox="0 0 12 12" aria-hidden="true"><line x1="0" y1="6" x2="9" y2="6"/><polyline points="5,2 9,6 5,10"/></svg></a></div>
+          </div>
+          <div class="osb-pj-card osb-reveal" data-category="infrastructure" data-delay="0">
+            <img class="osb-pj-card__image" src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?auto=format&fit=crop&w=800&q=80" alt="Infrastructure groundworks">
+            <div class="osb-pj-card__overlay"></div>
+            <div class="osb-pj-card__tag">Infrastructure</div>
+            <div class="osb-pj-card__content"><h3 class="osb-pj-card__title">Business Park Groundworks</h3><div class="osb-pj-card__location">Maidstone, Kent</div><p class="osb-pj-card__desc">Site preparation, drainage installation and utilities infrastructure for a new 12-acre commercial business park development.</p><a href="#" class="osb-pj-card__link">View Project <svg class="osb-pj-card__link-arrow" viewBox="0 0 12 12" aria-hidden="true"><line x1="0" y1="6" x2="9" y2="6"/><polyline points="5,2 9,6 5,10"/></svg></a></div>
+          </div>
+          <div class="osb-pj-card osb-pj-card--featured osb-reveal" data-category="commercial" data-delay="100">
+            <img class="osb-pj-card__image" src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1400&q=80" alt="Mixed-use development">
+            <div class="osb-pj-card__overlay"></div>
+            <div class="osb-pj-card__tag">Commercial</div>
+            <div class="osb-pj-card__content"><h3 class="osb-pj-card__title">Mixed-Use Retail & Office Development</h3><div class="osb-pj-card__location">Croydon, London</div><p class="osb-pj-card__desc">New build mixed-use scheme comprising ground-floor retail units and three floors of commercial office space, delivered under a design-and-build contract.</p><a href="#" class="osb-pj-card__link">View Project <svg class="osb-pj-card__link-arrow" viewBox="0 0 12 12" aria-hidden="true"><line x1="0" y1="6" x2="9" y2="6"/><polyline points="5,2 9,6 5,10"/></svg></a></div>
+          </div>
+          <div class="osb-pj-card osb-reveal" data-category="industrial" data-delay="0">
+            <img class="osb-pj-card__image" src="https://images.unsplash.com/photo-1565008447742-97f6f38c985c?auto=format&fit=crop&w=800&q=80" alt="Industrial unit upgrade">
+            <div class="osb-pj-card__overlay"></div>
+            <div class="osb-pj-card__tag">Industrial</div>
+            <div class="osb-pj-card__content"><h3 class="osb-pj-card__title">Manufacturing Facility Upgrade</h3><div class="osb-pj-card__location">Swindon, Wiltshire</div><p class="osb-pj-card__desc">Structural and MEP upgrades to an operational manufacturing facility, delivered in phases to maintain production throughout.</p><a href="#" class="osb-pj-card__link">View Project <svg class="osb-pj-card__link-arrow" viewBox="0 0 12 12" aria-hidden="true"><line x1="0" y1="6" x2="9" y2="6"/><polyline points="5,2 9,6 5,10"/></svg></a></div>
+          </div>
+          <div class="osb-pj-card osb-reveal" data-category="infrastructure" data-delay="100">
+            <img class="osb-pj-card__image" src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80" alt="Drainage and civils works">
+            <div class="osb-pj-card__overlay"></div>
+            <div class="osb-pj-card__tag">Infrastructure</div>
+            <div class="osb-pj-card__content"><h3 class="osb-pj-card__title">Residential Infrastructure & Drainage</h3><div class="osb-pj-card__location">Tunbridge Wells, Kent</div><p class="osb-pj-card__desc">Groundworks, drainage and utilities installation supporting a new 80-unit residential development on a constrained brownfield site.</p><a href="#" class="osb-pj-card__link">View Project <svg class="osb-pj-card__link-arrow" viewBox="0 0 12 12" aria-hidden="true"><line x1="0" y1="6" x2="9" y2="6"/><polyline points="5,2 9,6 5,10"/></svg></a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="osb-pj-cta">
+      <div class="osb-pj-cta__bg"></div>
+      <div class="osb-pj-cta__accent"></div>
+      <div class="osb-pj-cta__container">
+        <div class="osb-pj-cta__content osb-reveal" data-delay="0">
+          <h2 class="osb-pj-cta__heading">Have a Project in Mind?</h2>
+          <p class="osb-pj-cta__sub">We'd welcome the opportunity to discuss your requirements. Get in touch to start the conversation.</p>
+          <a href="/contact" class="osb-pj-cta__btn">Discuss Your Project <svg class="osb-pj-cta__btn-arrow" viewBox="0 0 14 14" aria-hidden="true"><line x1="1" y1="7" x2="11" y2="7"/><polyline points="7,3 11,7 7,11"/></svg></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="osb-footer">
+    <div class="osb-footer__accent"></div>
+    <div class="osb-footer__main">
+      <div class="osb-footer__col"><a href="/" class="osb-footer__brand-logo" aria-label="Osborn Contractors - Home"><img src="./assets/images/global/logo.png" alt="Osborn Contractors" width="180" height="48" loading="lazy"></a><p class="osb-footer__brand-text">Osborn Contractors delivers industrial, commercial and infrastructure projects with a focus on precision, reliability and high-quality outcomes. Built on over 30 years of experience through Osborn Associates.</p></div>
+      <div class="osb-footer__col"><h3 class="osb-footer__heading">Quick Links</h3><ul class="osb-footer__list"><li><a href="/" class="osb-footer__list-link">Home</a></li><li><a href="/about" class="osb-footer__list-link">About</a></li><li><a href="/projects" class="osb-footer__list-link">Projects</a></li><li><a href="/contact" class="osb-footer__list-link">Contact Us</a></li></ul></div>
+      <div class="osb-footer__col"><h3 class="osb-footer__heading">Services</h3><ul class="osb-footer__list"><li><a href="/services/industrial-refurbishment" class="osb-footer__list-link">Industrial Refurbishment</a></li><li><a href="/services/commercial-construction" class="osb-footer__list-link">Commercial Construction</a></li><li><a href="/services/infrastructure-and-civils" class="osb-footer__list-link">Infrastructure & Civils</a></li><li><a href="/services/repurposing-and-fit-out" class="osb-footer__list-link">Repurposing & Fit-Out</a></li><li><a href="/services/project-coordination" class="osb-footer__list-link">Project Coordination</a></li></ul></div>
+      <div class="osb-footer__col"><h3 class="osb-footer__heading">Contact</h3><div class="osb-footer__contact-item"><svg class="osb-footer__contact-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg><div class="osb-footer__contact-text">South Barn, Crockham Park,<br>Edenbridge, Kent, TN8 6SR</div></div><div class="osb-footer__contact-item"><svg class="osb-footer__contact-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg><div class="osb-footer__contact-text"><a href="tel:+441732860460">+44 1732 860460</a></div></div><div class="osb-footer__contact-item"><svg class="osb-footer__contact-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="22,4 12,13 2,4"/></svg><div class="osb-footer__contact-text"><a href="mailto:info@osborncontractors.co.uk">info@osborncontractors.co.uk</a></div></div></div>
+    </div>
+    <div class="osb-footer__bottom"><div class="osb-footer__bottom-inner"><p class="osb-footer__copyright">Copyright 2026. Osborn Contractors Ltd. All Rights Reserved.</p><div class="osb-footer__legal"><a href="/privacy-policy" class="osb-footer__legal-link">Privacy Policy</a><span class="osb-footer__legal-sep"></span><a href="/terms" class="osb-footer__legal-link">Terms & Conditions</a><span class="osb-footer__legal-sep"></span><span class="osb-footer__credit">Built by <a href="https://osbornonline.com" target="_blank" rel="noopener" class="osb-footer__credit-link">Osborn Online</a></span></div></div></div>
+  </footer>
+
+  <script src="./js/navbar.js"></script>
+  <script src="./js/scroll-reveal.js"></script>
+  <script>
+  (function() {
+    var filters = document.querySelectorAll('.osb-pj-filter');
+    var cards = document.querySelectorAll('.osb-pj-card');
+    filters.forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        filters.forEach(function(b) { b.classList.remove('osb-pj-filter--active'); });
+        btn.classList.add('osb-pj-filter--active');
+        var cat = btn.getAttribute('data-filter');
+        cards.forEach(function(card) {
+          if (cat === 'all' || card.getAttribute('data-category') === cat) {
+            card.style.display = '';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+  })();
+  </script>
+</body>
+</html>
